@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="108" height="108" fill="none">
+    <defs>
+        <radialGradient id="airlinkGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#10B981" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#34D399" />
+            <stop offset="100%" stop-color="#10B981" />
+        </linearGradient>
+        <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#38BDF8" />
+            <stop offset="100%" stop-color="#06B6D4" />
+        </linearGradient>
+        <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+
+    <!-- Radar Beacon Ambient Circle -->
+    <circle cx="54" cy="54" r="50" fill="url(#airlinkGlow)" />
+    
+    <!-- Outer Subtle Radar Beacon Ring -->
+    <circle cx="54" cy="54" r="40" stroke="#10B981" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 3" />
+    
+    <!-- Left Aerodynamic Signal Wave (Emerald) -->
+    <path d="M36,68 C24,56 26,38 42,30 C52,25 64,28 70,36 C76,44 75,56 65,63 C57,68 46,67 40,59 C35,53 36,44 43,39 C49,34 57,37 60,43" 
+          stroke="url(#emeraldGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)" />
+
+    <!-- Right Aerodynamic Interlocking Link (Cyan) -->
+    <path d="M72,40 C84,52 82,70 66,78 C56,83 44,80 38,72 C32,64 33,52 43,45 C51,40 62,41 68,49 C73,55 72,64 65,69 C59,74 51,71 48,65" 
+          stroke="url(#cyanGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)" />
+
+    <!-- Central AirLink Core Dot -->
+    <circle cx="54" cy="54" r="4.5" fill="#FFFFFF" />
+    <circle cx="54" cy="54" r="2" fill="#06B6D4" />
+</svg>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AirLink</string>
+    <string name="connect_offline">Connect AirLink</string>
+    <string name="disconnect_mesh">Disconnect</string>
+    <string name="mesh_status_idle">Offline • Radios Idle</string>
+    <string name="mesh_status_discovering">Discovering Nearby Peers…</string>
+    <string name="mesh_status_advertising">Broadcasting Presence…</string>
+    <string name="mesh_status_active">AirLink Mesh Active</string>
+    <string name="call_notification_channel">AirLink Active Call &amp; Mesh</string>
+    <string name="call_notification_channel_desc">Maintains peer-to-peer call audio session and multi-hop relay</string>
+</resources>

@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Minimalist Outer Subtle Radar Beacon Ring -->
+    <path
+        android:strokeColor="#2610B981"
+        android:strokeWidth="1.5"
+        android:pathData="M54,14 A40,40 0 1,1 53.99,14" />
+
+    <!-- Left Aerodynamic Signal Wave (Emerald) -->
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M36,68 C24,56 26,38 42,30 C52,25 64,28 70,36 C76,44 75,56 65,63 C57,68 46,67 40,59 C35,53 36,44 43,39 C49,34 57,37 60,43" />
+
+    <!-- Right Aerodynamic Interlocking Link (Cyan) -->
+    <path
+        android:strokeColor="#06B6D4"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M72,40 C84,52 82,70 66,78 C56,83 44,80 38,72 C32,64 33,52 43,45 C51,40 62,41 68,49 C73,55 72,64 65,69 C59,74 51,71 48,65" />
+
+    <!-- Central AirLink Core Dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-4,0a4,4 0,1,1 8,0a4,4 0,1,1 -8,0" />
+</vector>

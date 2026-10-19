@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.68"
+        android:scaleY="0.68"
+        android:pivotX="54"
+        android:pivotY="54">
+        <!-- Outer subtle radar ring -->
+        <path
+            android:strokeColor="#2E10B981"
+            android:strokeWidth="2"
+            android:pathData="M54,12 A42,42 0 1,1 53.99,12" />
+
+        <!-- Emerald Air Arc -->
+        <path
+            android:strokeColor="#10B981"
+            android:strokeWidth="6"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M36,68 C24,56 26,38 42,30 C52,25 64,28 70,36 C76,44 75,56 65,63 C57,68 46,67 40,59 C35,53 36,44 43,39 C49,34 57,37 60,43" />
+
+        <!-- Cyan Air Link -->
+        <path
+            android:strokeColor="#06B6D4"
+            android:strokeWidth="6"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M72,40 C84,52 82,70 66,78 C56,83 44,80 38,72 C32,64 33,52 43,45 C51,40 62,41 68,49 C73,55 72,64 65,69 C59,74 51,71 48,65" />
+
+        <!-- Center Core Dot -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,54m-4.5,0a4.5,4.5 0,1,1 9,0a4.5,4.5 0,1,1 -9,0" />
+    </group>
+</vector>

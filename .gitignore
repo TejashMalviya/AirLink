@@ -1,0 +1,15 @@
+# Gradle & build caches
+.gradle/
+build/
+app/build/
+.kotlin/
+
+# Local SDK and machine configurations
+local.properties
+*.iml
+.idea/
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
