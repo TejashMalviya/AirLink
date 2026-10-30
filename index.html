@@ -21,23 +21,32 @@
       </a>
       <ul class="nav-links">
         <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#why-it-matters">Why It Matters</a></li>
-        <li><a href="#playground">Playground</a></li>
-        <li><a href="#download">Download</a></li>
+        <li><a href="#simulator">Jammer Test</a></li>
+        <li><a href="#experience">Live App</a></li>
+        <li><a href="#range-calc">Mesh Reach</a></li>
+        <li><a href="#playground">3D Playground</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
-      <a href="#download" class="nav-download-btn">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download
-      </a>
+      <div class="nav-actions">
+        <!-- Sound Effect Toggle Button -->
+        <button id="sound-toggle-btn" class="nav-sound-btn" title="Toggle audio feedback" aria-label="Toggle Sound Effects">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          <span class="sound-label">Sound</span>
+        </button>
+        <a href="#download" class="nav-download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- ===== Hero ===== -->
+  <!-- ===== Hero Section ===== -->
   <section class="hero">
     <div class="container">
       <div class="hero-eyebrow reveal">
         <span class="hero-dot"></span>
-        People-Powered Network
+        People-Powered Network · 0 Towers
       </div>
 
       <h1 class="reveal">
@@ -46,26 +55,26 @@
       </h1>
 
       <p class="hero-sub reveal reveal-delay-1">
-        AirLink turns every smartphone into a relay. Your voice calls, messages, and photos
-        hop directly from phone to phone — no towers, no ISP, no SIM card needed.
+        AirLink turns everyday smartphones into autonomous encrypted relays. Voice calls, messages, and photos
+        hop directly from person to person over Wi-Fi Direct and Bluetooth. Zero internet, zero cellular towers, zero SIM cards.
       </p>
 
       <div class="hero-cta-row reveal reveal-delay-2">
-        <a href="#download" class="btn-fill">
+        <a href="AirLink-v1.0.apk" download="AirLink-v1.0.apk" class="btn-fill" id="hero-download-btn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download for Android
+          Download AirLink v1.0 (APK)
         </a>
-        <a href="#playground" class="btn-outline">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-          Try the Playground
-        </a>
+        <button class="btn-outline" id="btn-open-qr-modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Scan QR with Phone
+        </button>
       </div>
 
       <div class="hero-stats reveal reveal-delay-3">
         <span class="stat-chip"><span class="dot-green">●</span> Zero Internet Required</span>
         <span class="stat-chip"><span class="dot-green">●</span> Sub-30ms Voice Calls</span>
-        <span class="stat-chip"><span class="dot-red">●</span> Jammer? Doesn't Matter</span>
-        <span class="stat-chip">Android 8 → 15</span>
+        <span class="stat-chip"><span class="dot-red">●</span> Jammers Powerless</span>
+        <span class="stat-chip">Android 8.0 → 15</span>
       </div>
 
       <!-- Live 3D Mesh Canvas -->
@@ -78,10 +87,8 @@
     </div>
   </section>
 
-  <!-- ===== Scroll Story: How It Works ===== -->
+  <!-- ===== Scroll Story 1: Discovery & Radar ===== -->
   <div class="scroll-story" id="how-it-works">
-
-    <!-- Story 1: Discovery -->
     <div class="story-block">
       <div class="container">
         <div class="story-inner">
@@ -89,8 +96,8 @@
             <h2>Your phone finds nearby phones.<br><em>Automatically.</em></h2>
             <p>
               The moment you open AirLink, your phone starts broadcasting tiny beacon signals over
-              Wi-Fi Direct and Bluetooth. Other AirLink phones within range discover you instantly.
-              No pairing codes. No QR scans. No setup.
+              Wi-Fi Direct and Bluetooth Low Energy. Other AirLink phones within range discover you instantly.
+              No pairing codes. No QR scans. Zero manual configuration.
             </p>
             <ul class="story-check-list">
               <li><span class="check-icon">✓</span> Works indoors, outdoors, underground</li>
@@ -101,8 +108,8 @@
           <div class="story-visual-side reveal reveal-delay-1">
             <div class="live-demo-card">
               <div class="demo-card-header">
-                <span>● AirLink Radar</span>
-                <span style="color:var(--emerald);">5 peers found</span>
+                <span>● AirLink 360° Radar</span>
+                <span style="color:var(--emerald);">5 peers active nearby</span>
               </div>
               <div class="demo-card-body">
                 <div class="mesh-live-visual" id="story-mesh-1"></div>
@@ -113,43 +120,43 @@
       </div>
     </div>
 
-    <!-- Story 2: Jammer Mockery -->
+    <!-- Story 2: Jammer Mockery Breakdown -->
     <div class="story-block" id="why-it-matters">
       <div class="container">
         <div class="story-inner">
           <div class="story-visual-side reveal">
             <div class="live-demo-card">
               <div class="demo-card-header">
-                <span>● Jammer vs AirLink</span>
-                <span style="color:var(--red);">Jammer active outside</span>
+                <span>● Centralized Fragility vs AirLink</span>
+                <span style="color:var(--red);">Active jammer scenario</span>
               </div>
               <div class="jammer-mock-block">
                 <div class="mock-scenario jammer">
                   <span class="mock-icon">📡</span>
                   <div>
-                    <h4>Their Move: Deploy RF Jammer</h4>
-                    <p>They spent thousands blocking cellular bands (700MHz–2.6GHz). Every normal phone goes silent.</p>
+                    <h4>Their Move: Deploy $5,000 RF Jammer</h4>
+                    <p>They flood carrier bands (700MHz–2.6GHz). Every normal phone loses all bars.</p>
                   </div>
                 </div>
                 <div class="mock-scenario airlink">
                   <span class="mock-icon">🔗</span>
                   <div>
                     <h4>AirLink: Doesn't Even Notice</h4>
-                    <p>We hop over 5GHz Wi-Fi Direct and Bluetooth LE — frequencies the jammer doesn't even touch. Packets keep flowing between people as if nothing happened.</p>
+                    <p>We hop over 5.8 GHz &amp; 2.4 GHz Wi-Fi Direct right past the jammer. Packets flow freely through nearby phones as if nothing happened.</p>
                   </div>
                 </div>
                 <div class="mock-scenario jammer">
                   <span class="mock-icon">✂️</span>
                   <div>
-                    <h4>Their Move: Cut All Fiber Cables</h4>
-                    <p>The city loses internet. WhatsApp, Instagram, everything stops loading.</p>
+                    <h4>Their Move: Order State Telecom Blackout</h4>
+                    <p>Towers shut down. WhatsApp, Telegram, and emergency dialers flatline.</p>
                   </div>
                 </div>
                 <div class="mock-scenario airlink">
                   <span class="mock-icon">🤝</span>
                   <div>
-                    <h4>AirLink: "What's a Cable?"</h4>
-                    <p>There are no cables connecting your pocket to your friend's pocket. We've never needed the internet to begin with.</p>
+                    <h4>AirLink: "What's a Cell Tower?"</h4>
+                    <p>No master server exists to seize. No undersea cable connects your pocket to your neighbor's pocket. We are the telecom.</p>
                   </div>
                 </div>
               </div>
@@ -158,48 +165,151 @@
           <div class="story-text-side reveal reveal-delay-1">
             <h2>They think jammers<br>stop communication.<br><em>We think that's cute.</em></h2>
             <p>
-              Cell towers are the weak link. One jammer, one government order, one natural disaster —
-              and millions lose their voice. AirLink was built to make that scenario irrelevant.
+              Cell towers are the single point of failure. One government order, one natural disaster, one cheap radio jammer —
+              and millions lose their voice. AirLink was built so human communication can never be switched off.
             </p>
             <ul class="story-check-list">
               <li><span class="x-icon">✕</span> No cell tower dependency — ever</li>
-              <li><span class="x-icon">✕</span> No SIM card or phone number</li>
-              <li><span class="x-icon">✕</span> No cloud server to seize or subpoena</li>
+              <li><span class="x-icon">✕</span> No SIM card or phone number required</li>
+              <li><span class="x-icon">✕</span> No cloud server to subpoena, log, or hack</li>
               <li><span class="check-icon">✓</span> Self-healing mesh routes around obstacles</li>
-              <li><span class="check-icon">✓</span> End-to-end encrypted with Ed25519</li>
+              <li><span class="check-icon">✓</span> Cryptographic Ed25519 end-to-end privacy</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Story 3: Real App Experience -->
-    <div class="story-block">
-      <div class="container">
-        <div class="story-inner">
-          <div class="story-text-side reveal">
-            <h2>Real calls. Real chat.<br><em>Real app, running now.</em></h2>
-            <p>
-              Not a concept. Not a prototype. AirLink is a production Android app with voice calling, 
-              encrypted messaging, photo sharing, and a live radar that shows every person in your mesh.
-              Try the interactive chat demo →
-            </p>
-            <ul class="story-check-list">
-              <li><span class="check-icon">✓</span> Full-duplex voice calls (~24ms latency)</li>
-              <li><span class="check-icon">✓</span> Encrypted text &amp; photo messaging</li>
-              <li><span class="check-icon">✓</span> Live 360° radar topology map</li>
-              <li><span class="check-icon">✓</span> Battery optimized (&lt; 2% per hour)</li>
-            </ul>
+  <!-- ===== NEW FEATURE 1: Interactive Jammer Blackout Stress-Test ===== -->
+  <section class="section-padded bg-warm" id="simulator">
+    <div class="container">
+      <div class="section-center-head reveal">
+        <span class="section-tag-pill">Interactive Stress-Test</span>
+        <h2>Can They Silence Your City?</h2>
+        <p>Toggle the censorship methods below to see what happens to ordinary apps versus AirLink.</p>
+      </div>
+
+      <div class="stress-test-container reveal">
+        <div class="stress-controls-col">
+          <div class="toggle-card">
+            <div class="toggle-info">
+              <span class="toggle-title">1. Shut Down 4G &amp; 5G Cellular Towers</span>
+              <span class="toggle-desc">Carrier radios shut off or confiscated</span>
+            </div>
+            <label class="switch-ios">
+              <input type="checkbox" id="test-toggle-towers" checked>
+              <span class="slider-ios"></span>
+            </label>
           </div>
-          <div class="story-visual-side reveal reveal-delay-1">
-            <div class="phone-shell">
-              <div class="phone-screen">
-                <div class="phone-status-bar">9:41</div>
-                <div class="phone-app-header">
-                  <span>Elena · <span style="color:var(--emerald);font-size:0.75rem;">2 hops away</span></span>
-                  <span style="font-size:0.72rem;color:var(--text-caption);">🔒 E2E</span>
-                </div>
-                <div class="phone-app-body" style="display:flex;flex-direction:column;">
+
+          <div class="toggle-card">
+            <div class="toggle-info">
+              <span class="toggle-title">2. Sever Undersea Fiber Optic Cables</span>
+              <span class="toggle-desc">Zero connection to global internet/DNS</span>
+            </div>
+            <label class="switch-ios">
+              <input type="checkbox" id="test-toggle-fiber" checked>
+              <span class="slider-ios"></span>
+            </label>
+          </div>
+
+          <div class="toggle-card">
+            <div class="toggle-info">
+              <span class="toggle-title">3. Confiscate SIM Cards</span>
+              <span class="toggle-desc">No subscriber identity, no phone numbers</span>
+            </div>
+            <label class="switch-ios">
+              <input type="checkbox" id="test-toggle-sim" checked>
+              <span class="slider-ios"></span>
+            </label>
+          </div>
+
+          <div class="toggle-card">
+            <div class="toggle-info">
+              <span class="toggle-title">4. Deploy Active RF Radio Jammers</span>
+              <span class="toggle-desc">Broadcasting noise across 700MHz–2.6GHz</span>
+            </div>
+            <label class="switch-ios">
+              <input type="checkbox" id="test-toggle-jammer" checked>
+              <span class="slider-ios"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="stress-verdict-col">
+          <div class="meter-score-label">AirLink Network Status</div>
+          <div class="meter-score-number" id="stress-airlink-score">100%</div>
+          <div class="meter-badge-state" id="stress-airlink-badge">COMPLETELY IMMUNE</div>
+
+          <div class="app-comparison-meters">
+            <div class="comp-meter-row">
+              <span class="comp-name">Traditional Apps (WhatsApp / Cellular)</span>
+              <div class="comp-bar-track">
+                <div class="comp-bar-fill dead" id="bar-traditional" style="width: 0%;"></div>
+              </div>
+              <span class="comp-val" id="val-traditional" style="color:var(--red);">0% DEAD</span>
+            </div>
+            <div class="comp-meter-row">
+              <span class="comp-name">AirLink Peer-to-Peer Mesh</span>
+              <div class="comp-bar-track">
+                <div class="comp-bar-fill alive" id="bar-airlink" style="width: 100%;"></div>
+              </div>
+              <span class="comp-val" id="val-airlink" style="color:var(--emerald);">100% LIVE</span>
+            </div>
+          </div>
+
+          <p class="stress-explanation" id="stress-explanation-text">
+            All 4 sabotage mechanisms are active. While carrier-dependent apps suffer 100% outage, 
+            AirLink devices communicate directly over 5GHz Wi-Fi Direct and BLE. The jammer wasted electricity; AirLink never relied on towers to begin with.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEW FEATURE 2: Multi-Mode Live Phone Simulator (Chat + Walkie-Talkie Call + Radar) ===== -->
+  <section class="section-padded" id="experience">
+    <div class="container">
+      <div class="story-inner">
+        <div class="story-text-side reveal">
+          <span class="section-tag-pill">Live App Simulator</span>
+          <h2>Real calls. Real chat.<br><em>Try the app in your browser.</em></h2>
+          <p>
+            Experience the three core modules of AirLink right here. Switch between encrypted mesh messaging, 
+            real-time walkie-talkie voice calls with live audio synthesis, and the 360° radar view.
+          </p>
+          <ul class="story-check-list">
+            <li><span class="check-icon">✓</span> <strong>Full-duplex voice calls</strong>: ~24ms low-latency audio</li>
+            <li><span class="check-icon">✓</span> <strong>Encrypted chat</strong>: Multi-hop verification and routing tags</li>
+            <li><span class="check-icon">✓</span> <strong>Live Radar</strong>: Shows exact hops and signal strength</li>
+            <li><span class="check-icon">✓</span> <strong>Battery optimized</strong>: Consumes &lt; 1.8% per hour in background</li>
+          </ul>
+        </div>
+
+        <div class="story-visual-side reveal reveal-delay-1">
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <!-- Top Status Bar -->
+              <div class="phone-status-bar">
+                <span>9:41</span>
+                <span class="phone-status-icons">● 0 Towers · Mesh OK</span>
+              </div>
+
+              <!-- Interactive Mode Switcher Tabs -->
+              <div class="phone-mode-tabs">
+                <button class="mode-tab active" data-mode="chat" id="tab-btn-chat">💬 Chat</button>
+                <button class="mode-tab" data-mode="call" id="tab-btn-call">📞 Voice Call</button>
+                <button class="mode-tab" data-mode="radar" id="tab-btn-radar">📡 Radar</button>
+              </div>
+
+              <div class="phone-app-body">
+                <!-- VIEW 1: ENCRYPTED CHAT -->
+                <div class="phone-view active" id="view-chat">
+                  <div class="phone-app-header">
+                    <span>Elena · <span style="color:var(--emerald);font-size:0.75rem;">2 hops away</span></span>
+                    <span style="font-size:0.72rem;color:var(--text-caption);">🔒 E2E</span>
+                  </div>
                   <div id="phone-chat-stream" class="chat-demo-messages">
                     <div class="chat-bub in">
                       Did they just kill the cell tower outside?
@@ -215,17 +325,218 @@
                     </div>
                   </div>
                   <div class="chat-input-row">
-                    <input id="phone-chat-input" type="text" placeholder="Type a message…">
+                    <input id="phone-chat-input" type="text" placeholder="Type an offline message…">
                     <button id="phone-chat-send" class="chat-send-btn">➤</button>
                   </div>
                 </div>
+
+                <!-- VIEW 2: REAL-TIME WALKIE-TALKIE VOICE CALL -->
+                <div class="phone-view" id="view-call">
+                  <div class="call-interface-box">
+                    <div class="call-peer-avatar" id="call-avatar">EL</div>
+                    <div class="call-peer-name">Elena (Target Peer)</div>
+                    <div class="call-status-badge" id="call-status-label">Encrypted Relay via 2 Hops</div>
+                    <div class="call-timer" id="call-clock">00:00</div>
+
+                    <!-- Dynamic Audio Oscilloscope / Waveform -->
+                    <div class="audio-wave-wrap" id="audio-wave-container">
+                      <span class="wave-stick"></span>
+                      <span class="wave-stick"></span>
+                      <span class="wave-stick"></span>
+                      <span class="wave-stick"></span>
+                      <span class="wave-stick"></span>
+                      <span class="wave-stick"></span>
+                      <span class="wave-stick"></span>
+                      <span class="wave-stick"></span>
+                    </div>
+
+                    <div class="call-actions-row">
+                      <button class="call-action-btn" id="btn-call-mute" title="Mute Microphone">🎤</button>
+                      <button class="call-action-btn main-call-btn" id="btn-call-toggle">
+                        <span id="call-btn-text">Start Test Call</span>
+                      </button>
+                      <button class="call-action-btn" id="btn-call-speaker" title="Speakerphone">🔊</button>
+                    </div>
+                    <div class="call-specs-caption">
+                      20ms PCM Audio · Wi-Fi Direct Sockets · 0 Data Used
+                    </div>
+                  </div>
+                </div>
+
+                <!-- VIEW 3: LIVE TOPOLOGY RADAR VIEW -->
+                <div class="phone-view" id="view-radar">
+                  <div class="radar-mini-box">
+                    <div class="radar-mini-header">
+                      <span>RADAR TOPOLOGY</span>
+                      <span style="color:var(--emerald);">5 ONLINE</span>
+                    </div>
+                    <canvas id="mini-radar-canvas" width="230" height="230"></canvas>
+                    <div class="radar-peer-specs">
+                      <div>● Alex: Direct (1 hop) · -42 dBm</div>
+                      <div>● Maya: Direct (1 hop) · -55 dBm</div>
+                      <div>● Elena: Mesh (2 hops) · -62 dBm</div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- ===== NEW FEATURE 3: Interactive Mesh Hop Range Calculator ===== -->
+  <section class="section-padded bg-warm" id="range-calc">
+    <div class="container">
+      <div class="section-center-head reveal">
+        <span class="section-tag-pill">Physics of Decentralization</span>
+        <h2>How Far Can Your Voice Travel?</h2>
+        <p>See how the swarm network expands with every person who opens AirLink in your area.</p>
+      </div>
+
+      <div class="range-calculator-card reveal">
+        <div class="range-slider-wrap">
+          <div class="slider-header-row">
+            <span>Nearby People Running AirLink:</span>
+            <span class="people-count-pill" id="range-people-display">25 People</span>
+          </div>
+          <input type="range" id="range-slider" min="2" max="250" value="25" class="ios-slider">
+          <div class="slider-ticks-row">
+            <span>2 (Room)</span>
+            <span>25 (Campus)</span>
+            <span>100 (Neighborhood)</span>
+            <span>250+ (Entire City)</span>
+          </div>
+        </div>
+
+        <div class="range-results-grid">
+          <div class="range-stat-box">
+            <div class="range-stat-num" id="calc-distance-val">3.2 km</div>
+            <div class="range-stat-label">Total Communication Radius</div>
+            <div class="range-stat-sub" id="calc-coverage-text">Covers a full university campus or stadium</div>
+          </div>
+
+          <div class="range-stat-box">
+            <div class="range-stat-num" id="calc-hops-val">4 Relays</div>
+            <div class="range-stat-label">Maximum Multi-Hop Hops</div>
+            <div class="range-stat-sub">Automated TTL loop suppression</div>
+          </div>
+
+          <div class="range-stat-box">
+            <div class="range-stat-num" id="calc-latency-val">~22 ms</div>
+            <div class="range-stat-label">Voice Audio Latency</div>
+            <div class="range-stat-sub">Imperceptible walkie-talkie speed</div>
+          </div>
+
+          <div class="range-stat-box">
+            <div class="range-stat-num" style="color:var(--emerald);">$0.00</div>
+            <div class="range-stat-label">Cellular Data Cost</div>
+            <div class="range-stat-sub">100% free off-grid transmission</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEW FEATURE 4: Comparison Table ===== -->
+  <section class="section-padded">
+    <div class="container">
+      <div class="section-center-head reveal">
+        <span class="section-tag-pill">Uncompromising Architecture</span>
+        <h2>AirLink vs Traditional Telecom</h2>
+        <p>Why conventional communications fail during blackouts, and why AirLink cannot.</p>
+      </div>
+
+      <div class="table-responsive-wrap reveal">
+        <table class="apple-compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="highlight-col">AirLink Mesh</th>
+              <th>Cellular / 5G</th>
+              <th>WhatsApp / Signal</th>
+              <th>Hardware Walkie-Talkies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Requires Internet / Towers</td>
+              <td class="highlight-col"><strong style="color:var(--emerald);">0 KB/s (Zero)</strong></td>
+              <td>100% Required</td>
+              <td>100% Required</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Works Under RF Cell Jammers</td>
+              <td class="highlight-col"><strong style="color:var(--emerald);">✓ 100% Immune (5GHz Wi-Fi/BLE)</strong></td>
+              <td>✕ Blocked</td>
+              <td>✕ Blocked</td>
+              <td>Varies by channel</td>
+            </tr>
+            <tr>
+              <td>SIM Card &amp; Phone Number</td>
+              <td class="highlight-col"><strong style="color:var(--emerald);">None (Ed25519 Keys)</strong></td>
+              <td>Mandatory</td>
+              <td>Mandatory</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Multi-Hop Mesh Extension</td>
+              <td class="highlight-col"><strong style="color:var(--emerald);">✓ Unlimited Peered Hops</strong></td>
+              <td>✕ Single point tower</td>
+              <td>✕ Server relay only</td>
+              <td>✕ Direct line-of-sight only</td>
+            </tr>
+            <tr>
+              <td>Works in Subways &amp; Concrete Basements</td>
+              <td class="highlight-col"><strong style="color:var(--emerald);">✓ Hops via bystanders</strong></td>
+              <td>✕ Signal dead</td>
+              <td>✕ Signal dead</td>
+              <td>✕ Blocked by walls</td>
+            </tr>
+            <tr>
+              <td>Hardware Needed</td>
+              <td class="highlight-col"><strong style="color:var(--emerald);">Standard Android Phone</strong></td>
+              <td>Phone + Carrier Plan</td>
+              <td>Phone + Internet Plan</td>
+              <td>$100+ Dedicated Radio Unit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEW FEATURE 5: Offline Spreading Guide ===== -->
+  <section class="section-padded bg-warm">
+    <div class="container">
+      <div class="section-center-head reveal">
+        <span class="section-tag-pill">Offline Preparedness</span>
+        <h2>How To Spread When Internet Is Already Cut</h2>
+        <p>No Google Play? No problem. AirLink is designed to spread hand-to-hand like a digital fire.</p>
+      </div>
+
+      <div class="offline-steps-grid reveal">
+        <div class="offline-step-card">
+          <div class="step-badge">STEP 01</div>
+          <h3>Download &amp; Keep APK</h3>
+          <p>Download <code>AirLink-v1.0.apk</code> now and keep it saved in your phone's storage or SD card.</p>
+        </div>
+        <div class="offline-step-card">
+          <div class="step-badge">STEP 02</div>
+          <h3>Share via Bluetooth</h3>
+          <p>When the internet is killed, send the APK file directly to anyone nearby using Bluetooth or Quick Share in 30 seconds.</p>
+        </div>
+        <div class="offline-step-card">
+          <div class="step-badge">STEP 03</div>
+          <h3>Mesh Automatically Expands</h3>
+          <p>As soon as they tap install, their phone instantly becomes a relay node, extending everyone's reach by another 100 meters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== Interactive 3D Playground ===== -->
   <section class="sandbox-section" id="playground">
@@ -283,7 +594,70 @@
     </div>
   </section>
 
-  <!-- ===== Download ===== -->
+  <!-- ===== NEW FEATURE 6: Frequently Answered Questions ===== -->
+  <section class="section-padded" id="faq">
+    <div class="container">
+      <div class="section-center-head reveal">
+        <span class="section-tag-pill">Common Questions</span>
+        <h2>Everything You Need To Know</h2>
+        <p>Technical details, privacy guarantees, and device compatibility.</p>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can university exam jammers or police RF jammers block AirLink?</span>
+            <span class="faq-chevron">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Commercial jammers only target cellular uplink/downlink bands (700MHz to 2.6GHz) to stop calls and LTE data. AirLink operates on localized peer-to-peer 5.8 GHz &amp; 2.4 GHz Wi-Fi Direct and Bluetooth LE. To jam AirLink, someone would have to deploy military-grade microwave disruption that fries their own equipment.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can intermediate relay people listen to my voice call or read my messages?</span>
+            <span class="faq-chevron">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Impossible. Every packet is encrypted end-to-end using Ed25519 cryptography. Intermediate phones merely inspect the outer routing header (next-hop ID and TTL) and forward the encrypted payload without possessing the decryption keys.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does running a mesh relay drain my battery?</span>
+            <span class="faq-chevron">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>AirLink incorporates high-speed in-memory duplicate packet suppression and sleeps radio beacons when no new packets are in transit. Continuous background relaying consumes less than 1.8% to 2.2% battery per hour.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does it work in Airplane Mode?</span>
+            <span class="faq-chevron">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Simply turn on Airplane Mode, then re-enable Wi-Fi and Bluetooth. AirLink will run 100% normally because it never touches cellular radios.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What Android versions are supported?</span>
+            <span class="faq-chevron">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Any smartphone running Android 8.0 (Oreo / API 26) up to Android 15 (API 35) with Wi-Fi Direct and Bluetooth hardware. No root access or special permissions required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Download Section ===== -->
   <section class="download-section" id="download">
     <div class="container reveal">
       <h2>Ready to build your<br>own human network?</h2>
@@ -292,14 +666,21 @@
         Start talking without needing a single cell tower.
       </p>
 
-      <a href="AirLink-v1.0.apk" download="AirLink-v1.0.apk" class="download-main-btn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-          <polyline points="7 10 12 15 17 10"/>
-          <line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-        Download AirLink v1.0 for Android
-      </a>
+      <div class="download-btns-cluster">
+        <a href="AirLink-v1.0.apk" download="AirLink-v1.0.apk" class="download-main-btn" id="main-download-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download AirLink v1.0 (APK)
+        </a>
+
+        <button class="download-qr-btn" id="btn-open-qr-modal-2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Show QR Code
+        </button>
+      </div>
 
       <div class="download-meta">
         <span>📦 17.6 MB</span>
@@ -307,8 +688,35 @@
         <span>🔒 100% Free &amp; Open</span>
         <span>⚡ Zero Internet Needed</span>
       </div>
+
+      <div class="checksum-capsule">
+        <span>SHA-256:</span>
+        <code>6ddba9501d2aae73ae3fa9c298e498d7683735554cd21af4abc2d763b9bf01ca</code>
+        <button id="copy-hash-btn" class="copy-pill-btn">Copy</button>
+      </div>
     </div>
   </section>
+
+  <!-- ===== QR CODE MODAL ===== -->
+  <div class="modal-overlay" id="qr-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="btn-close-qr-modal" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <img src="assets/logo.svg" alt="AirLink" width="32" height="32">
+        <h3>Install on Android</h3>
+        <p>Point your phone camera to download directly to your device</p>
+      </div>
+      <div class="qr-code-holder" id="qr-modal-canvas">
+        <!-- SVG QR code rendered by app.js -->
+      </div>
+      <div class="modal-apk-specs">
+        <span>Version 1.0 Stable</span> · <span>17.6 MB</span> · <span>Android 8.0+</span>
+      </div>
+      <a href="AirLink-v1.0.apk" download="AirLink-v1.0.apk" class="btn-fill" style="width:100%;justify-content:center;margin-top:16px;">
+        Direct Download APK
+      </a>
+    </div>
+  </div>
 
   <!-- ===== Footer ===== -->
   <footer>
